@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+    <head>
+        <meta charset="UTF-8">
+        <title>Event registration system</title>
+        <link rel="stylesheet" href="../../css/style.css">
+    </head>
+    <body>
+        <header>
+            <h1>ERS Adding a new performance</h1>
+            <img src="../../images/logo.jpg" alt="logo">
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../artist/list.html">Artists</a></li>
+                <li><a href="../event/list.html">Events</a></li>
+                <li><a href="list.html" class="active">Program of performances</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h2>New performance</h2>
+            <form class="form" action="list.html">
+
+                
+                <label for="artist">Artist: </label>
+                <select class="error-input" name="type" id="artist" required>
+                    <option value="1">Arch enemy</option>
+                    <option value="2">Skillet</option>
+                </select>
+                <span id="errorArtist" class="errors-text">The field is empty</span>
+                
+
+                <label for="event">Event: </label>
+                <select class="error-input" name="type" id="event" required>
+                    <option value="1">Requiem</option>
+                </select>
+                <span id="errorEvent" class="errors-text">The field is empty</span>
+                
+                <label for="queue">Number in queue: <span class="symbol-required">*</span></label>
+                <input type="number" name="queue" id="queue" class="error-input" required/>
+                <span id="errorQueue" class="errors-text">The field is empty</span>
+
+                
+                <label for="time">Performance time: <span class="symbol-required">*</span></label>
+                <input type="time" name="time" id="time" class="error-input" required/>
+                <span id="errorTime" class="errors-text">The field is empty</span>
+
+                
+                <div class="form-buttons">
+                    <p id="errorsSummary" class="errors-text">Some input errors</p>
+                    <input class="form-button-submit" type="submit" value="Add" />
+                    <a class="form-button-cancel" href="list.html">Cancel</a>    
+                </div>
+                
+            </form>
+        </main>
+        <footer>
+            Denys Diedov s19530
+        </footer>
+    </body>
+
+
+
+</html>

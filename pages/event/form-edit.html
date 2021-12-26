@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+    <head>
+        <meta charset="UTF-8">
+        <title>Event registration system</title>
+        <link rel="stylesheet" href="../../css/style.css">
+    </head>
+    <body>
+        <header>
+            <h1>ERS the event editing</h1>
+            <img src="../../images/logo.jpg" alt="logo">
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../artist/list.html">Artists</a></li>
+                <li><a href="list.html" class="active">Events</a></li>
+                <li><a href="../performance/list.html">Program of performances</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h2>Event editing</h2>
+            <form class="form" action="list.html">
+                
+
+                <label for="name">Name: <span class="symbol-required">*</span></label>
+                <input type="text" name="name" id="name" value="Requiem" required/>
+                <span id="errorName" class="errors-text"></span>
+                
+                
+                <label for="topic">Topic: <span class="symbol-required">*</span></label>
+                <input type="text" name="topic" id="topic" value="New Java test" required/>
+                <span id="errorTopic" class="errors-text"></span>
+
+
+                <label for="link">Link: <span class="symbol-required">*</span></label>
+                <input type="url" name="link" id="link" value="https://www.google.pl/" required/>
+                <span id="errorLink" class="errors-text"></span>
+
+                
+                <label for="date">Date: <span class="symbol-required">*</span></label>
+                <input type="date" name="date" id="date" value="2021-11-05" required/>
+                <span id="errorDate" class="errors-text"></span>
+
+                
+                <label for="duration">Duration: <span class="symbol-required">*</span></label>
+                <input type="time" name="duration" id="duration" value="01:30" required/>
+                <span id="errorDuration" class="errors-text"></span>
+                
+                <div class="form-buttons">
+                    <p id="errorsSummary" class="errors-text"></p>
+                    <input class="form-button-submit" type="submit" value="Edit" />
+                    <a class="form-button-cancel" href="list.html">Cancel</a>    
+                </div>
+                
+            </form>
+        </main>
+        <footer>
+            Denys Diedov s19530
+        </footer>
+
+    </body>
+
+
+</html>

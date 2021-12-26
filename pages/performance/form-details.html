@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+    <head>
+        <meta charset="UTF-8">
+        <title>Event registration system</title>
+        <link rel="stylesheet" href="../../css/style.css">
+    </head>
+    <body>
+        <header>
+            <h1>ERS Performance editing</h1>
+            <img src="../../images/logo.jpg" alt="logo">
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../artist/list.html">Artists</a></li>
+                <li><a href="../event/list.html">Events</a></li>
+                <li><a href="list.html" class="active">Program of performances</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h2>Performance details</h2>
+            <form class="form" action="list.html">
+
+                <label for="artist">Artist: </label>
+                <select name="type" id="artist" required disabled>
+                    
+                    <option value="1" selected>Arch enemy</option>
+                    <option value="2">Skillet</option>
+                </select>
+                <span id="errorArtist" class="errors-text"></span>
+                
+                <label for="event">Event: </label>
+                <select name="type" id="event" required disabled>
+                    
+                    <option value="1" selected>Requiem</option>
+                </select>
+                <span id="errorEvent" class="errors-text"></span>
+                
+                
+                <label for="queue">Number in queue: <span class="symbol-required">*</span></label>
+                <input type="number" name="queue" id="queue" value="1" required disabled/>
+                <span id="errorQueue" class="errors-text"></span>
+
+                
+                <label for="time">Performance time: <span class="symbol-required">*</span></label>
+                <input type="time" name="time" id="time" value="15:30" required disabled/>
+                <span id="errorTime" class="errors-text"></span>
+
+                
+                <div class="form-buttons">
+                    <a class="form-button-cancel" href="list.html">Cancel</a> 
+                </div>
+                
+            </form>
+
+            <!--
+                <table class="table-list">
+                <thead>
+                    <tr>
+                        <th>Artist</th>
+                        <th>Event</th>
+                        <th>Queue number</th>
+                        <th>Performance time</th>
+                        
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Arch enemy</td>
+                        <td>Requiem</td>
+                        <td>1</td>
+                        <td>15.30</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Skillet</td>
+                        <td>Requiem</td>
+                        <td>2</td>
+                        <td>19.00</td>
+                        
+                    </tr>               
+                </tbody>
+            </table>
+            -->
+            
+
+
+        </main>
+        <footer>
+            Denys Diedov s19530
+        </footer>
+    </body>
+
+
+
+</html>

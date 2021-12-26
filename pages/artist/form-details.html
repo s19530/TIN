@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Event registration system</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>ERS the artist editing</h1>
+        <img src="../../images/logo.jpg" alt="logo">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="list.html" class="active">Artists</a></li>
+            <li><a href="../event/list.html">Events</a></li>
+            <li><a href="../performance/list.html">Program of performances</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Artist details</h2>
+        <form class="form" action="list.html">
+            <label for="name">Name: <span class="symbol-required">*</span></label>
+            <input type="text" name="name" id="name" value="Arch enemy" required disabled />
+            <span id="errorName" class="errors-text"></span>
+
+            <label for="count">Count of members: <span class="symbol-required">*</span></label>
+            <input type="number" name="count" id="count" value="5" required disabled />
+            <span id="errorCount" class="errors-text"></span>
+
+
+            <div class="form-buttons">
+
+                <a class="form-button-cancel" href="list.html">Cancel</a>
+
+            </div>
+        </form>
+
+
+        <table class="table-list">
+            <thead>
+                <tr>
+                    <th>Event</th>
+                    <th>Queue number</th>
+                    <th>Time</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Reqiem</td>
+                    <td>1</td>
+                    <td>15:30</td>
+                </tr>
+
+
+            </tbody>
+        </table>
+
+
+
+
+    </main>
+    <footer>
+        Denys Diedov s19530
+    </footer>
+</body>
+
+
+
+</html>
